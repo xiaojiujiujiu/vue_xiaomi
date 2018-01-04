@@ -1,0 +1,109 @@
+html {
+  font-family: 'Arial,Verdana,Sans-serif';
+  height: 100%;
+  width: 100%;
+  -webkit-text-size-adjust: none;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: @baseFontSize;
+  color: @baseFontColor;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dd,
+ol,
+ul,
+th,
+td,
+form,
+fieldset,
+input,
+button,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+input,
+textarea{
+  outline: none;
+}
+.page-wrap{
+  &.has-header{
+    padding-top: 1rem;
+  }
+  &.has-footer{
+    padding-bottom: 0.9rem;
+  }
+}
+.product-list-info {
+  overflow: hidden;
+  h4 {
+    font-size: .28rem;
+    color: rgba(0, 0, 0, .87);
+    white-space: nowrap;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  h5 {
+    margin-top: .06rem;
+    font-size: .23rem;
+    line-height: .3rem;
+    color: rgba(0, 0, 0, .54);
+    white-space: nowrap;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    margin-bottom: 0.2rem;
+    max-width: 100%;
+  }
+  span {
+    font-size: .32rem;
+    color: #ff6000;
+    margin-top: .08rem;
+    &:before {
+      content: "￥";
+      font-size: .2rem;
+      margin-right: .05rem;
+    }
+  }
+}
+
+.iconfont{
+  font-size: 0.5rem;
+}
